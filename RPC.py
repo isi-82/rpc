@@ -1,8 +1,8 @@
 from pypresence import Presence
 import time
 
-anime = input("What anime are you Watching? : ")
-client_id = "921866924533616760"
+rpc_text = input("Your RPC Text : ")
+client_id = "[Your Client ID]"
 RPC = Presence(client_id)
 
 RPC.connect()
@@ -11,6 +11,4 @@ print("RPC starting...")
 
 while True: 
     time.sleep(15) 
-    RPC.update(state="Is wachting anime...")
-    time.sleep(15)
-    RPC.update(state=f"Anime: {anime}")
+    RPC.update(state=rpc_text)
