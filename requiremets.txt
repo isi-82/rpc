@@ -1,2 +1,2 @@
-pyprecence
+pypresence
 time
